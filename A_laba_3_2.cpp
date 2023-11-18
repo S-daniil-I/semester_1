@@ -46,7 +46,6 @@ int main()
         }
         max = arr[0][0];
         int k = 0;
-
         for (int i = 0; i < N; i++) {
 
             if (arr[i][i] > max) {
@@ -85,13 +84,11 @@ int main()
         }
         max = arr[0][0];
         int k = 0;
-
         for (int i = 0; i < N; i++) {
 
             if (arr[i][i] > max) {
                 max = arr[i][i];
                 k = i;
-
             }
         }
         cout << "Максимальный элемент равен:" << max << " " << ", находится на " << k + 1 << "-ой строке \n";
@@ -115,22 +112,17 @@ int main()
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 arr[i][j] = rand() % 10;
+                 cout << setw(3) << arr[i][j];
             }
-        }
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++)
-                cout << setw(3) << arr[i][j];
             cout << endl;
         }
         max = arr[0][0];
         int k = 0;
-
         for (int i = 0; i < N; i++) {
 
             if (arr[i][i] > max) {
                 max = arr[i][i];
                 k = i;
-
             }
         }
         cout << "Максимальный элемент равен:" << max << " " << ", находится на " << k + 1 << "-ой строке \n";
